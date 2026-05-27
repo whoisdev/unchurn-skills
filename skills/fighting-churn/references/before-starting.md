@@ -1,4 +1,4 @@
-## 1. Before starting
+# Before starting
 
 Three numbers and three constraints. They change the recipe, not just the details.
 

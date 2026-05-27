@@ -1,4 +1,4 @@
-## 8. Save offer matrix (reason x LTV)
+# Save offer matrix (reason x LTV)
 
 The baseline advice is "show a 20–30% discount." That works if all your customers pay the same amount. They don't.
 

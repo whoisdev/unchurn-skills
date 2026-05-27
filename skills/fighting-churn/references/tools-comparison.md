@@ -1,4 +1,4 @@
-## 13. Tools comparison
+# Tools comparison
 
 Every option in this table is a real product that real founders use. Pick based on your MRR, your billing provider, and how much setup time you can afford, not on feature lists you will never touch.
 

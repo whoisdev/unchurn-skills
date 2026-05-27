@@ -1,4 +1,4 @@
-## 14. The 10/10 cancel flow audit
+# The 10/10 cancel flow audit
 
 Score yourself. Each item is worth 1 point. Total at the bottom. The fix column is actionable tonight.
 

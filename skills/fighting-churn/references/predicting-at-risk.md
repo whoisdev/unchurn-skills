@@ -1,4 +1,4 @@
-## 9. Predicting at-risk customers
+# Predicting at-risk customers
 
 Most founders are pitched ML-based churn prediction within a year of launching. Carl Gold, who spent years building these systems, has a sobering take: pure churn prediction is overrated. The behavioral metrics themselves, correctly measured and grouped as in §4 and §5, are what product and CS teams can actually act on. A regression model trained on those same metrics does not change what you do, it just re-sorts the queue. At small scale, that sorting is not worth the pipeline cost.
 

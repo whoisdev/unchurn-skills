@@ -1,4 +1,4 @@
-## 2. The three kinds of churn
+# The three kinds of churn
 
 Most retention advice splits churn into two buckets: voluntary (customer chose to leave) and involuntary (payment failed). That split is useful for routing work, but it misses the category that determines whether your cancel flow even gets a chance to run.
 

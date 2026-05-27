@@ -1,4 +1,4 @@
-## 6. Cancel flow design
+# Cancel flow design
 
 A cancel flow has five screens. Each has a job. Get them in the right order and you cut voluntary churn by 20–35% without dark patterns or discount spam.
 

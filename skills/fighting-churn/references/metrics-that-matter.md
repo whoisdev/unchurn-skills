@@ -1,4 +1,4 @@
-## 11. Metrics that matter
+# Metrics that matter
 
 Eight numbers tell you whether your cancel flow is working and whether your churn is moving in the right direction. The first four are measurement fundamentals. The next four are operational. The last one is the one most teams skip.
 

@@ -1,4 +1,4 @@
-## 4. Behavioral metrics, not vibes
+# Behavioral metrics, not vibes
 
 Most founder dashboards are not analytics. They are event counts with a date filter. "Feature X used 847 times last month" sounds like insight, but it tells you nothing about which accounts are healthy and which are six weeks from canceling. Turning raw events into predictive signals requires one extra step that almost nobody does: aggregating events into per-account, time-windowed metrics.
 

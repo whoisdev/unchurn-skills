@@ -1,4 +1,4 @@
-## 10. Involuntary churn: Stripe dunning
+# Involuntary churn: Stripe dunning
 
 Involuntary churn, subscriptions lost because a payment failed, not because the customer chose to leave, accounts for 30 to 50% of total churn for most SaaS businesses. Most of it is recoverable. Unlike building a cancel flow, fixing involuntary churn is mostly a Stripe configuration problem: two toggles, a short email sequence, and correct handling of decline codes. You can close the gap in a day.
 

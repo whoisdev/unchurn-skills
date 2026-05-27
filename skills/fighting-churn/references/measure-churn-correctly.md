@@ -1,4 +1,4 @@
-## 3. Measure churn correctly
+# Measure churn correctly
 
 Most founders are computing churn wrong. Not imprecisely wrong. Structurally wrong. The number they track, the benchmark they compare it against, and the metric they report to investors are three different things computed three different ways, and they treat them as interchangeable. This is the section that fixes that.
 

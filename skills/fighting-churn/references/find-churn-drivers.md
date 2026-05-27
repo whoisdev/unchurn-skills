@@ -1,4 +1,4 @@
-## 5. Find your churn drivers (cohort analysis + correlation)
+# Find your churn drivers (cohort analysis + correlation)
 
 Section 4 gets you clean cancel reasons. This section is about the behavior data that precedes the cancel button: what customers were actually doing (or not doing) in the weeks before they left.
 

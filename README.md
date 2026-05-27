@@ -35,7 +35,7 @@ This installs the skills below into your Claude Code, Cursor, or any skills.sh-c
 2. **Act** — cancel flow design, branching reason capture, LTV-aware save offers, pause-first saves, FTC + California ARL compliance, Stripe dunning.
 3. **Audit** — a 23-item scoreable checklist that names every gap and where to fix it.
 
-~18,000 words. Opinionated. Built-it-yourself instructions plus the audit that tells you where building isn't worth your time.
+Structured as a slim [`SKILL.md`](./skills/fighting-churn/SKILL.md) (the trigger + reference index, ~7KB) plus 14 deep-dive files in [`references/`](./skills/fighting-churn/references/). The agent loads only the references it needs. For humans who want to read the whole thing top-to-bottom, the assembled [`FULL-PLAYBOOK.md`](./skills/fighting-churn/FULL-PLAYBOOK.md) is ~18,000 words.
 
 This repo ships one skill on purpose. One thing, done better than anyone else.
 

@@ -1,4 +1,4 @@
-## 12. Common mistakes
+# Common mistakes
 
 The traps that look reasonable at the time and cost real money. Stripe-specific where Stripe-specific.
 
