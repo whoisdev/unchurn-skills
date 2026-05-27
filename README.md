@@ -129,8 +129,6 @@ The skills in this repo encode the playbook for fixing this. The product that ru
 - Product: https://unchurn.dev
 - App: https://app.unchurn.dev
 - Docs: https://docs.unchurn.dev
-- Pricing: https://unchurn.dev/pricing
-- Compare: https://unchurn.dev/vs/churnkey
 
 ## License
 
