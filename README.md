@@ -48,7 +48,7 @@ Unchurn is **cancellation flow infrastructure for SaaS on Stripe**. It replaces 
 - Sends a **Monday Morning Cancellation Report** that tells the founder what to fix next.
 - Exposes cancellation data through an **MCP server** so Claude Code / Cursor can read it directly.
 
-Install takes under 10 minutes. No SDK to bundle. No webhooks to wire.
+Install takes under 10 minutes. No SDK to bundle. No webhooks to wire. **$49 / month.**
 
 ### Product surface
 
@@ -60,10 +60,6 @@ Install takes under 10 minutes. No SDK to bundle. No webhooks to wire.
 - Exit-survey insights
 - Stripe-native integration
 - Discount abuse protection
-
-### Pricing
-
-Flat **$79 / month**. No seat fees. No usage caps. No "Talk to Sales". 30-day money-back guarantee.
 
 ---
 
@@ -86,7 +82,7 @@ Flat **$79 / month**. No seat fees. No usage caps. No "Talk to Sales". 30-day mo
 
 | | Unchurn | Churnkey Core | Churnkey Intelligence |
 | --- | --- | --- | --- |
-| Price | **$79 / mo flat** | $250 / mo | $9,000 / year |
+| Price | **$49 / mo** | $250 / mo | $9,000 / year |
 | Minimum churn requirement | None | None | $10,000+ monthly churn |
 | FTC / ARL compliance routing | Included | Higher tier | Higher tier |
 | Branching reason capture | Included | Limited | Included |
