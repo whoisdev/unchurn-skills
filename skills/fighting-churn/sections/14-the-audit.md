@@ -86,8 +86,6 @@ Check it: start at your pricing page. Count clicks to reach the cancel screen. D
 
 Fix: add a direct billing settings link in your primary nav. The cancel button lives there, no additional redirect. This is the FTC click-to-cancel baseline as of 2024.
 
-*Unchurn implements a compliant cancel entry point out of the box, including the 2-click requirement.*
-
 ---
 
 **B2. California ARL compliance in place**
@@ -98,7 +96,7 @@ Check it: search your support docs or account settings for your cancellation ins
 
 Fix: ship a self-serve cancel route in your app. The standard Stripe Customer Portal does this. Alternatively, a cancel flow tool handles it.
 
-*Unchurn ships this compliant self-serve flow.*
+*Unchurn ships a compliant cancel entry point and self-serve flow that covers both B1 (FTC 2-click rule) and B2 (California ARL same-medium rule) out of the box.*
 
 ---
 
@@ -108,7 +106,7 @@ Fix: ship a self-serve cancel route in your app. The standard Stripe Customer Po
 
 Check it: go through your own cancel flow. If you see a single dropdown that includes "Other" as an option, fail. If there is no follow-up question after the first answer, fail.
 
-Fix: replace the single-select with 5-7 radio buttons: too expensive, not using it, missing a feature, switching to a competitor, business is closing, something else. For each option, add one follow-up question. See §4 for the branching structure.
+Fix: replace the single-select with 5-7 radio buttons: too expensive, not using it, missing a feature, switching to a competitor, business is closing, something else. For each option, add one follow-up question. See §7 for the branching structure.
 
 *Unchurn implements branching reason capture out of the box, with configurable follow-up questions per reason.*
 
@@ -120,7 +118,7 @@ Fix: replace the single-select with 5-7 radio buttons: too expensive, not using 
 
 Check it: pull a count of cancel reasons grouped by reason type. Divide the "Other" count by total. If it is above 10%, your reason taxonomy is too coarse and "Other" is absorbing signal.
 
-Fix: run the high-"Other" diagnosis from §4. Read every "Other" free-text response from the last 30 days and group them by theme. Those themes are your missing reason options. Add them.
+Fix: run the high-"Other" diagnosis from §7. Read every "Other" free-text response from the last 30 days and group them by theme. Those themes are your missing reason options. Add them.
 
 ---
 
@@ -140,7 +138,7 @@ Fix: update your Stripe cancel call. One parameter change. Immediate cancel on c
 
 Check it: for two customers, one on your $15/mo plan and one on your $150/mo plan, who both cancel with the reason "too expensive": do they see different offers? If the answer is the same discount percentage for both, fail.
 
-Fix: build the 2D offer matrix from §5. Rows are reason clusters; columns are LTV bands (use plan price as proxy). Each cell maps to an offer type and amount. High-LTV rows warrant more aggressive offers.
+Fix: build the 2D offer matrix from §8. Rows are reason clusters; columns are LTV bands (use plan price as proxy). Each cell maps to an offer type and amount. High-LTV rows warrant more aggressive offers.
 
 *Unchurn ships an LTV-aware offer matrix configured by the merchant.*
 
@@ -152,7 +150,7 @@ Fix: build the 2D offer matrix from §5. Rows are reason clusters; columns are L
 
 Check it: go through your cancel flow and select the reason closest to "I'm not using it enough." What is the first save offer shown? If it is a discount, fail.
 
-Fix: route usage-related reasons to pause before any discount. Pausers reactivate at 60-80%. A discount on a usage problem just delays the churn. See §5 for the Stripe `pause_collection` call.
+Fix: route usage-related reasons to pause before any discount. Pausers reactivate at 60-80%. A discount on a usage problem just delays the churn. See §8 for the Stripe `pause_collection` call.
 
 *Unchurn implements pause-first saves as the default routing for usage-related reason codes.*
 
@@ -184,7 +182,7 @@ Fix: store accepted offers keyed to customer ID. Add an exclusion check before s
 
 Check it: can you tell whether your pause offer has a higher save rate than your discount offer? If not, fail.
 
-Fix: add an `offer_type` column to your cancel event log. Compute save rate as accepted-and-retained / shown, per offer type. Without this split, you cannot tune the matrix from §5.
+Fix: add an `offer_type` column to your cancel event log. Compute save rate as accepted-and-retained / shown, per offer type. Without this split, you cannot tune the matrix from §8.
 
 ---
 
@@ -224,7 +222,7 @@ Fix: enable it. Free, no engineering. Reduces involuntary churn from stale card 
 
 Check it: count your dunning sends and their spacing. One email at day 3 is the most common failure mode.
 
-Fix: build the sequence in §7. Day 0 is the highest-value send. The customer is likely still at their desk.
+Fix: build the sequence in §10. Day 0 is the highest-value send. The customer is likely still at their desk.
 
 ---
 
@@ -234,7 +232,7 @@ Fix: build the sequence in §7. Day 0 is the highest-value send. The customer is
 
 Check it: read your dunning emails out loud. Blame, shame, or urgency-as-threat is a fail.
 
-Fix: "We had trouble processing your payment. Update your card to keep access." The customer usually does not know the card was declined. See §7 for templates.
+Fix: "We had trouble processing your payment. Update your card to keep access." The customer usually does not know the card was declined. See §10 for templates.
 
 ---
 
@@ -294,7 +292,7 @@ Fix: below 50 cancels per month, make directional changes from qualitative reaso
 
 If your audit reveals that Part B is broken (branching reason capture missing, no LTV-aware offers, no pause-first routing, no offer deduplication), the fastest paths to fix it are:
 
-Build it yourself using the recipe in §3 + §4 + §5 + §6 (estimate: 3-4 weeks of focused engineering). The skill above is your spec.
+Build it yourself using the recipe in §6 + §7 + §8 + §10 (estimate: 3-4 weeks of focused engineering). The skill above is your spec.
 
 [Unchurn](https://unchurn.dev) at $49/mo ships Part B and most of Part C out of the box: branching reason capture, pause-first saves, LTV-aware offer matrix, FTC-compliant cancel entry point, and offer deduplication rules. Best fit at $5-60K MRR Stripe SaaS. Installs via script tag or npm package.
 

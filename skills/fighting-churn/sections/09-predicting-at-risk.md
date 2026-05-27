@@ -77,8 +77,6 @@ CLV = (gross_margin × MRR) / monthly_churn_prob
 
 Each subscriber gets their own churn probability and therefore their own CLV estimate. A customer at $200 MRR with 3% monthly churn probability has a CLV of roughly $3,000-$4,000 (at 50% margin). The same $200 MRR customer at 15% monthly churn has CLV under $700. That difference is worth knowing before you decide how much time to spend on an outreach call.
 
-For products with annual churn below 20%, apply a discount factor for long-horizon non-churn risks (Gupta and Lehman 2003).
-
 ---
 
 ### The billing-page signal applies at every tier
