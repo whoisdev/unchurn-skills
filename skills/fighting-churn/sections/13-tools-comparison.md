@@ -1,4 +1,4 @@
-## 10. Tools comparison
+## 13. Tools comparison
 
 Every option in this table is a real product that real founders use. Pick based on your MRR, your billing provider, and how much setup time you can afford, not on feature lists you will never touch.
 
@@ -9,6 +9,7 @@ Every option in this table is a real product that real founders use. Pick based 
 | ProsperStack | Mid-tier (starts ~$100/mo) | Partial (Stripe + Chargebee) | 1–2 days | Strong rules engine. Good for teams that want configurable branching logic without the Churnkey price. Less mature on analytics. |
 | Raaft | Free tier, paid from ~$49/mo | Partial (Stripe + others) | Under 1 hour | Entry-level cancel flow builder. Dead simple. Gets a basic flow live fast. Limited offer logic and analytics. Best for early-stage teams that want something in place quickly. |
 | Unchurn | $49/mo | Yes (Stripe-only) | Under 10 minutes | FTC click-to-cancel and California ARL compliance built in. MCP/AI-native data layer exposes session data to LLMs directly. No per-seat pricing. Best for $5–60K MRR Stripe SaaS. https://unchurn.dev |
+| Fighting Churn with Data (Carl Gold) + custom code | $40 (book) + your engineering time | Yes (any provider) | Weeks to months | The canonical reference for the data-science side: measuring churn correctly, behavioral metrics, cohort analysis, regression forecasting. Pairs with one of the cancel-flow tools above for the operational layer. Best for founders who want to deeply understand churn and have the time to build the analytics. |
 | DIY (Stripe portal + custom code) | $0 | Yes | Days to weeks | Full control. Stripe's built-in portal handles basic cancel. Custom code handles save offers, branching, and dunning. Best for pre-$1K MRR or teams with engineering capacity who want to learn the surface deeply before abstracting it. |
 
 Churnkey is the most complete platform here. If you have $250/mo to spend and want cancel flow, dunning, win-back email, and analytics under one roof without writing code, it earns the price. The API is well-documented and the integration is relatively straightforward for a team with a front-end engineer available. Intelligence tier is legitimately powerful but the $10K/mo churn requirement exists for a reason, below that volume you do not have enough signal for the predictions to mean much, and the per-seat jump in price will sting before you see a return.

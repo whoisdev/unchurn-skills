@@ -1,4 +1,4 @@
-## 9. Common mistakes
+## 12. Common mistakes
 
 These are the traps that look reasonable at the time and cost real money.
 
@@ -25,3 +25,15 @@ These are the traps that look reasonable at the time and cost real money.
 - **No post-cancel reactivation path.** Some customers cancel for seasonal reasons, budget freezes, or team changes. Six months later, the situation resolves and they want back. If your only path is full sign-up, you will lose a portion of these to friction. A one-click reactivation email with their previous plan pre-filled converts meaningfully better. Build the path; set a win-back sequence at 30, 60, and 90 days post-cancel.
 
 - **Founder stops reading cancel reasons after month 2.** The exit survey exists to route offers automatically, yes. But the highest-signal input your product receives is why paying customers leave. Reading 10 cancel reasons per week takes 5 minutes and will surface things no analytics dashboard surfaces. The moment you delegate this entirely to automation, you stop learning from your most honest customers.
+
+### Measurement mistakes (the ones upstream of everything else)
+
+These are the mistakes that make the rest of this skill harder to apply, because the numbers you're optimizing for are wrong.
+
+- **Computing churn with the wrong denominator.** Using end-of-period subscriber count (or an average) as the denominator is not just imprecise, it is incoherent. It mixes acquisition signal into the churn rate. The formula requires start-of-period count. See §3.
+
+- **Averaging churn rates across cohorts or months.** Churn rates are not averageable. Two months at 5% and 7% is not 6%. You must compute pooled rates from the underlying cancellation and start-of-period counts. Averaging is how founders end up reporting numbers that look stable while underlying churn is moving.
+
+- **Using MRR churn when you have annual plans.** A monthly-to-annual switch shows up as a downsell in the MRR churn formula, inflating your reported churn rate. If you offer annual billing, report standard account-based churn as the primary number and use MRR churn only as a secondary view.
+
+- **Reporting net revenue retention as "churn".** Net MRR churn (gross MRR churn minus expansion) can look healthy or even negative while you're losing customers at a high rate. Companies that quote NRR to their team as the churn metric are hiding cancels behind expansion revenue. Report standard churn, gross MRR churn, and NRR as three separate numbers.

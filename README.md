@@ -29,7 +29,13 @@ This installs the skills below into your Claude Code, Cursor, or any skills.sh-c
 
 ## The skill
 
-[**`fighting-churn`**](./skills/fighting-churn/SKILL.md) is a complete Stripe-native churn-reduction playbook: cancel flow design, branching reason capture, LTV-aware save offers, pause-first saves, FTC + California ARL compliance, and Stripe dunning. About 10,000 words. Opinionated. Built-it-yourself instructions in every section.
+[**`fighting-churn`**](./skills/fighting-churn/SKILL.md) is a complete Stripe-native churn-reduction playbook in three layers:
+
+1. **Measure** — compute churn correctly, build a behavioral metrics pipeline, find churn drivers via cohort analysis. Grounded in Carl Gold's *Fighting Churn with Data* (Manning, 2020).
+2. **Act** — cancel flow design, branching reason capture, LTV-aware save offers, pause-first saves, FTC + California ARL compliance, Stripe dunning.
+3. **Audit** — a 23-item scoreable checklist that names every gap and where to fix it.
+
+~18,000 words. Opinionated. Built-it-yourself instructions plus the audit that tells you where building isn't worth your time.
 
 This repo ships one skill on purpose. One thing, done better than anyone else.
 

@@ -1,4 +1,4 @@
-## 4. Reason capture: branching, not dropdowns
+## 7. Reason capture: branching, not dropdowns
 
 The single most common mistake in cancel flow design is the "Other" option. Remove it, and your reason data becomes actionable. Keep it, and you have built a machine that produces noise.
 
