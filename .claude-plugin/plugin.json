@@ -1,0 +1,7 @@
+{
+  "name": "unchurn-skills",
+  "description": "Agent skills for Stripe SaaS founders fighting churn. By Unchurn (https://unchurn.dev).",
+  "skills": [
+    "./skills/fighting-churn"
+  ]
+}
