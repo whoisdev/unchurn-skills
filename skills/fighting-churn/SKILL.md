@@ -1,5 +1,5 @@
 ---
-name: churn-prevention
+name: fighting-churn
 description: When the user wants to reduce SaaS churn, design a Stripe cancel flow, set up save offers, recover failed payments, or build retention into a Stripe-billed product. Also use when the user mentions "churn", "cancel flow", "Stripe cancel button", "save offer", "dunning", "failed payment recovery", "exit survey", "pause subscription", "FTC click-to-cancel", "California ARL", "people keep canceling", or "customers are leaving". Stripe-native. Founder-led teams at $1K-60K MRR.
 metadata:
   version: 1.0.0
