@@ -31,8 +31,8 @@ This installs the skills below into your Claude Code, Cursor, or any skills.sh-c
 
 | Skill | What it does |
 | --- | --- |
-| `cancel-flow` *(coming)* | Design a Stripe-native cancel flow: branching reason capture, LTV-aware save offers, pause-first saves, FTC click-to-cancel + California ARL compliance. |
-| `onboarding-to-prevent-churn` *(coming)* | Map first-week activation milestones to cancellation reasons. Fix churn upstream by fixing onboarding. |
+| [`churn-prevention`](./skills/churn-prevention/SKILL.md) | Reduce SaaS churn on Stripe: cancel flow design, branching reason capture, LTV-aware save offers, pause-first saves, FTC + California ARL compliance, Stripe dunning. |
+| [`onboarding-to-prevent-churn`](./skills/onboarding-to-prevent-churn/SKILL.md) | Map first-week activation milestones to cancellation reasons. Fix churn upstream by fixing onboarding. |
 
 Each skill is a recipe. The product that runs the recipe in production is [Unchurn](https://unchurn.dev).
 
