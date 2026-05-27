@@ -21,11 +21,23 @@
 
 ## Install
 
+**Via [skills.sh](https://www.skills.sh)** (installs across 28+ agents: Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot, Continue, etc.)
+
 ```bash
 npx skills add whoisdev/unchurn-skills
 ```
 
-This installs the skills below into your Claude Code, Cursor, or any skills.sh-compatible agent. The skills teach the agent how to design a Stripe cancel flow that actually reduces churn without dark patterns.
+**Via [agentskill.sh](https://agentskill.sh/skills/whoisdev/fighting-churn)** (security-audited 100/100, one-line install in their CLI)
+
+```bash
+# one-time setup
+npx @agentskill.sh/cli@latest setup
+
+# then in any supported agent
+/learn @whoisdev/fighting-churn
+```
+
+Either path installs the skill below. It teaches the agent how to design a Stripe cancel flow that actually reduces churn without dark patterns.
 
 ## The skill
 
