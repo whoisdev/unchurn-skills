@@ -27,14 +27,13 @@ npx skills add whoisdev/unchurn-skills
 
 This installs the skills below into your Claude Code, Cursor, or any skills.sh-compatible agent. The skills teach the agent how to design a Stripe cancel flow that actually reduces churn without dark patterns.
 
-## Skills in this repo
+## The skill
 
-| Skill | What it does |
-| --- | --- |
-| [`fighting-churn`](./skills/fighting-churn/SKILL.md) | Reduce SaaS churn on Stripe: cancel flow design, branching reason capture, LTV-aware save offers, pause-first saves, FTC + California ARL compliance, Stripe dunning. |
-| [`onboarding-to-prevent-churn`](./skills/onboarding-to-prevent-churn/SKILL.md) | Map first-week activation milestones to cancellation reasons. Fix churn upstream by fixing onboarding. |
+[**`fighting-churn`**](./skills/fighting-churn/SKILL.md) is a complete Stripe-native churn-reduction playbook: cancel flow design, branching reason capture, LTV-aware save offers, pause-first saves, FTC + California ARL compliance, and Stripe dunning. About 10,000 words. Opinionated. Built-it-yourself instructions in every section.
 
-Each skill is a recipe. The product that runs the recipe in production is [Unchurn](https://unchurn.dev).
+This repo ships one skill on purpose. One thing, done better than anyone else.
+
+The product that runs the recipe in production is [Unchurn](https://unchurn.dev).
 
 ---
 
